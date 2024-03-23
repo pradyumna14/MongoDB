@@ -4,7 +4,7 @@ db.students.insertOne({name: "Ram", age: 12})
 >> database(db) mah euta collection xah(students) jasko bhitr euta document xah(Ram) ko!
 
 db.students.insertOne({name: "Shyam", age: 13})
-
+<br>
 db.students.find()
 >> displays the total document in the collection(students)
 
@@ -19,6 +19,7 @@ db.student.updateOne({name:"Ram"}, {$set: {idCards: {hasPanCard: false, hasAdhar
 -----------------------------------------
 
 db.students.insertOne({name: "Ram", age: 12, idCards: {hasPanCard: false, hasAdharCard: true}})
+<br>
 db.students.insertOne({name: "Shyam", age: 13,idCards: {hasPanCard: true, hasAdharCard: true}})
 
 >> we need only that object who have a pan card! 
